@@ -11,10 +11,7 @@ vector<int> minimalHeaviestSetA(vector<int> arr)
     {
         totalAmount += arr[i];
     }
-    // step 2. If the sum of the values ​​of A is greater than that of A and A should be minimal,
-    // the sum of the values of A must be equal to the minimum array that is greater than half the sum of the values.
-    // for example totalAmount equals to 51,total amount of A equals to 26 or higher.But we want that A should be minimum so total amount of A
-    // must be close to 26.
+    // step 2.
     int valueToReach=0;
     if(totalAmount%2 == 0)
     {
@@ -23,7 +20,7 @@ vector<int> minimalHeaviestSetA(vector<int> arr)
     else
         valueToReach = (totalAmount+1)/ 2;
 
-    //step 3. Lets sort the arr from bigger to smaller.This will make our code easier.
+    //step 3. 
 
     int temp=0;
     for(int k=0; k<ArraySize-1; k++)
